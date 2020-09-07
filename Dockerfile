@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 COPY . .
 RUN chmod 777 /usr/src/app && \
     apt-get -qq update
-    apt-get -qq install -y git python3 python3-pip \
+    apt-get -qq install -y git \
     locales python3-lxml \
     curl pv jq && \
     pip3 install --no-cache-dir -r requirements.txt && \
