@@ -3,7 +3,7 @@ FROM python:3.8.5-slim-buster
 WORKDIR /usr/src/app
 COPY . .
 RUN chmod 777 /usr/src/app && \
-    apt-get -qq update
+    apt-get -qq update && \
     apt-get -qq install -y git \
     locales python3-lxml \
     curl pv jq && \
